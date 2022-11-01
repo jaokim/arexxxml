@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
 echo Hello
-make Makefile
+make -f Makefile
 
