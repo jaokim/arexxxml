@@ -1,4 +1,4 @@
 
 echo Hello
-; make Makefile
+make Makefile
 
