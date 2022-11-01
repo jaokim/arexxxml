@@ -1,0 +1,6 @@
+name: 'Hello Amiga'
+description: 'Build an AmigaOS 4 application'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
