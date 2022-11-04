@@ -31,6 +31,7 @@
 
 #include <cstdio>
 #include <string>
+#include <cstring>
 #include <list>
 #include <proto/expat.h>
 #include <proto/dos.h>
