@@ -27,6 +27,6 @@ jobs:
         with:
           name: the_artifacts
           path: |
-            ${{artifact-1}}
-            ${{artifact-2}}
-            ${{artifact-3}}
+            ${{inputs.artifact-1}}
+            ${{inputs.artifact-2}}
+            ${{inputs.artifact-3}}
