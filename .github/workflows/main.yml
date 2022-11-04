@@ -1,18 +1,32 @@
 on:
   workflow_dispatch:
-
+    inputs:
+      make-target:
+        description: The main target to make
+      artifact-1:
+        description: Artifact no 1 created when make has run
+        required: true
+      artifact-2:
+        description: Artifact no 1 created when make has run
+      artifact-3:
+        description: Artifact no 1 created when make has run
 jobs:
-  hello_world_job:
+  make:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Job that runs a Makefile
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Hello world action step
+      - name: Make action step
         uses: ./ # Uses an action in the root directory
-        id: hello
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        id: make
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: the_artifacts
+          path: |
+            artifact-1
+            artifact-2
+            artifact-3
