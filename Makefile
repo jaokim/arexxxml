@@ -18,7 +18,7 @@ LINK = -gstabs -mcrt=newlib
 TARGET = ARexxXML
 
 # Additional linker libraries
-LIBS = -lauto -lraauto -lexpat
+LIBS = -athread=native -lauto -lraauto -lexpat
 
 # Source code files used in this project
 # Add any additional files to this line

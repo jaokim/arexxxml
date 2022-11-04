@@ -1,5 +1,10 @@
 #!/bin/sh -l
 
 echo Hello
-make -f Makefile
+echo Doo
+whoami
+pwd
+ls -l
+ls -l ..
+make CROSS_COMPILE=ppc-amigaos- -f Makefile
 
