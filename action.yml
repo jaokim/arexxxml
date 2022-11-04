@@ -3,4 +3,5 @@ description: 'Build an AmigaOS 4 application'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-
+  args:
+    - ${{ inputs.make-target }}
