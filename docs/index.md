@@ -33,6 +33,7 @@ of element "`mojo`".
 
 Instructions:
 -------------
+```
 ArexxXml takes one optional argument:
 NEWPORT/S               Should the ARexx-port create a new
     ARexx-port, like AREXXXML.1, AREXXXML.2 etc, or should
@@ -75,7 +76,7 @@ Each command can return these codes:
     18 	File couldn't be found
     19 	File couldn't be read
     20 	Couldn't allocate memory
-
+```
 
 Examples:
 ---------
