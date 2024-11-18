@@ -1,12 +1,13 @@
----
+ARexxXml
+
+ArexxXml can be download on [os4depot/utility/text/misc/arexxxml.lha](https://os4depot.net/?function=showfile&file=utility/text/misc/arexxxml.lha)
+
 Version:        1.1
 Author:         Joakim Nordström
 Date:           2009-12-03
 Requirements:   OS4, expat.library, uni.library, [http-handler]
 Download:       https://os4depot.net/?function=showfile&file=utility/text/misc/arexxxml.lha
----
 
-# ARexxXml
 
 What is it?
 -----------
@@ -17,17 +18,18 @@ How does it work?
 When started, ARexxXml creates an ARexx-port, AREXXXML.
 
 Assume a XML-file like below:
+```
     <test>
         <mojo temp="foo">Pop<mojo/>
         <mojo temp="bar">Funk<mojo/>
     </test>
-
+```
 Now, with one simple ARexx-command:
-
+``` 
 GETTAG "test.mojo(temp)"
-
-we would get the value "foo" which is the attribute "temp"
-of element "mojo".
+```
+we would get the value "`foo`" which is the attribute "`temp`"
+of element "`mojo`".
 
 Instructions:
 -------------
