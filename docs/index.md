@@ -1,10 +1,12 @@
-ARexxXml
---------
+---
 Version:        1.1
 Author:         Joakim Nordström
 Date:           2009-12-03
 Requirements:   OS4, expat.library, uni.library, [http-handler]
 Download:       https://os4depot.net/?function=showfile&file=utility/text/misc/arexxxml.lha
+---
+
+# ARexxXml
 
 What is it?
 -----------
